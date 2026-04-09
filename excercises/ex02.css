@@ -1,6 +1,10 @@
 p {color:blue; font-size:large}
 h1 {color:brown; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 h1 {font-family: 'Courier New', Courier, monospace;}
-ol {color: darkolivegreen;}
+ol {color: rgb(221, 10, 10);}
 em {color:rgb(18, 162, 95)}
 head {color: blueviolet;}
+img {border-color: rgb(153, 255, 0); border-radius: 20cm; border-style:inset; border-width: 0.8cm; align-self: center;}
+p {text-align: center}
+em {text-decoration:double; text-shadow: 7cm; text-shadow: 4cm;}
+html {background-color: bisque;}
