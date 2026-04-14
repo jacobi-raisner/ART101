@@ -8,3 +8,19 @@ img {border-color: rgb(153, 255, 0); border-radius: 20cm; border-style:inset; bo
 p {text-align: center}
 em {text-decoration:double; text-shadow: 7cm; text-shadow: 4cm;}
 html {background-color: bisque;}
+
+span {background-color:rgb(47, 163, 205);}
+
+/* select all html tags that have a class highlight_01 */
+
+.highlight_01 {background-color: rgb(202, 202, 20);}
+
+.highlight_02 {background-color:rgb(202, 141, 202);}
+
+.highlight_03 {background-color:rgb(60, 255, 0);}
+
+.highlight_04 {background-color:rgb(150, 207, 188)}
+
+#orangutan-small {width:150px}
+
+p strong {font-weight: bold;}
