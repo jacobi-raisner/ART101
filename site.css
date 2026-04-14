@@ -11,5 +11,5 @@ h3 {
 }
 
 img {
-    width: 200px;
+    width: 200px; border-style: dashed; border-radius:40dvb; border-width: 5px;
 }
