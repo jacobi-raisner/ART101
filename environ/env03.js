@@ -28,7 +28,7 @@ let mainEntity = {
 let interactionCount = 0;
 
 
-// SHOW TITLE
+// shows the title when clicked, etc
 
 $("#btn-title").click(function () {
 
@@ -39,7 +39,7 @@ $("#btn-title").click(function () {
 });
 
 
-// SHOW ENVIRONMENT ELEMENTS
+
 
 $("#btn-elements").click(function () {
 
@@ -56,7 +56,7 @@ $("#btn-elements").click(function () {
 });
 
 
-// SHOW MAIN ENTITY
+// show button when clicked , change color of text
 
 $("#btn-entity").click(function () {
 
