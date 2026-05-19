@@ -46,7 +46,7 @@ console.log("color count "+colorCount);
 
   paintPage( colors[colorCount] );
    
-
+   
 
    if (colors[colorCount] == "HotPink") { 
         $("#needy-button").after(" notPink ");

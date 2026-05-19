@@ -33,5 +33,6 @@ $("#needy-button").click(function () {
     console.log(count);
     console.log(arrayPosition);
     console.log(currentMood);
+    
 
 });

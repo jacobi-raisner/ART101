@@ -186,3 +186,96 @@ $("#possessed-button").click(function () {
     changeArenaMood("possessed");
 
 });
+
+let following = false;
+
+
+// CLICK EVENT
+
+$("#haunted-ball").click(function () {
+
+    $(this).toggleClass("awake");
+
+    $("#arena-status").text(
+        "The basketball twists unnaturally."
+    );
+
+});
+
+
+// HOVER EVENT
+
+$("#haunted-ball").hover(
+
+    function () {
+
+        $("#whisper").stop(true, true).fadeIn(300);
+
+        $("#arena-status").text(
+            "You hear whispering from inside the ball. It's loud as all get out!"
+        );
+
+    },
+
+    function () {
+
+        $("#whisper").stop(true, true).fadeOut(300);
+
+        $("#arena-status").text(
+            "The whisper is no longer there, jeeez."
+        );
+
+    }
+
+);
+
+
+// SPACE KEY EVENT
+
+$(document).keydown(function (event) {
+
+    if (event.key === " " || event.code === "Space") {
+
+        event.preventDefault();
+
+        following = !following;
+
+        $("#haunted-ball").toggleClass("hunting");
+
+        if (following === true) {
+
+            $("#arena-status").text(
+                "The basketball has started to follow you very strangely indeed."
+            );
+
+        }
+
+        else {
+
+            $("#arena-status").text(
+                "The basketball stopped moving."
+            );
+
+        }
+
+    }
+
+});
+
+
+// the mouse follows with the block (copy paste from lab6 )
+$(document).mousemove(function (event) {
+
+    if (following === true) {
+
+        $("#haunted-ball").css({
+
+            left: event.pageX - $("#arena-scene").offset().left + 90,
+
+            top: event.pageY - $("#arena-scene").offset().top + 220
+
+        });
+
+    }
+
+});
